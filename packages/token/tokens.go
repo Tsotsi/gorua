@@ -3,6 +3,8 @@ package token
 //go:generate stringer -type Token
 type Token int
 type Pos int // rune position
+var NoPos Pos = 0
+
 const (
 	ILLEGAL Token = iota
 	EOF
